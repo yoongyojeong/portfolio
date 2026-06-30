@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,6 +12,7 @@
 
     <nav id="navMenu" aria-label="Main navigation">
       <a href="index.html" class="active">About</a>
+      <a href="index.html#ai-survey">AI Survey</a>
       <a href="activities.html">Activities</a>
     </nav>
 
@@ -34,7 +35,7 @@
         </p>
         <div class="hero-actions">
           <a class="btn primary" href="activities.html">View Activities</a>
-          <a class="btn secondary" href="#about">About Me</a>
+          <a class="btn secondary" href="#ai-survey">Ask AI Agent</a>
         </div>
       </div>
 
@@ -99,10 +100,44 @@
         </article>
       </div>
     </section>
+
+    <section id="ai-survey" class="section ai-survey">
+      <div class="section-heading">
+        <p class="eyebrow">AI Survey Service</p>
+        <h2>AI 에이전트에게 질문하기</h2>
+      </div>
+
+      <div class="survey-layout">
+        <div class="survey-copy">
+          <h3>궁금한 내용을 남겨주세요</h3>
+          <p>
+            이름, 이메일, 질문을 입력하면 AI 에이전트가 내용을 분석하고
+            답변을 이메일로 받을 수 있도록 설계한 설문 서비스 영역입니다.
+          </p>
+          <p class="webhook-note">
+            Make.com Custom Webhook URL을 연결하면 실제 자동 응답 흐름으로 확장할 수 있습니다.
+          </p>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+          <label for="visitorName">이름</label>
+          <input type="text" id="visitorName" placeholder="이름" required />
+
+          <label for="visitorEmail">이메일</label>
+          <input type="email" id="visitorEmail" placeholder="이메일" required />
+
+          <label for="visitorMessage">질문</label>
+          <textarea id="visitorMessage" placeholder="AI 에이전트에게 할 질문을 입력하세요" required></textarea>
+
+          <button type="submit">AI 에이전트에게 질문하기</button>
+          <div id="responseMessage" class="response-message" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>© 2026 Your Name. All rights reserved.</p>
+    <p>Copyright 2026 Your Name. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
