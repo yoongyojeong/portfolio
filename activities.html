@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Activities | My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-bar">
+    <a class="logo" href="index.html">My Portfolio</a>
+
+    <nav id="navMenu" aria-label="Main navigation">
+      <a href="index.html">About</a>
+      <a href="activities.html" class="active">Activities</a>
+    </nav>
+
+    <button class="menu-btn" type="button" aria-label="Open navigation menu" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <p class="eyebrow">Activity List</p>
+      <h1>Projects, Studies, and Experiences</h1>
+      <p>
+        Here are some projects, experiences, and activities I have worked on.
+      </p>
+    </section>
+
+    <section class="activity-list" aria-label="Portfolio activities">
+      <article class="activity-card">
+        <div class="activity-top">
+          <span class="chip">Project</span>
+          <span class="date">2026</span>
+        </div>
+        <h2>Personal Website</h2>
+        <p>
+          Built a responsive personal portfolio website using HTML, CSS, and
+          JavaScript.
+        </p>
+        <button type="button" onclick="showMessage('Personal Website')">Details</button>
+      </article>
+
+      <article class="activity-card">
+        <div class="activity-top">
+          <span class="chip">Study</span>
+          <span class="date">2026</span>
+        </div>
+        <h2>JavaScript Practice</h2>
+        <p>
+          Practiced DOM manipulation, events, functions, and simple interactive
+          features.
+        </p>
+        <button type="button" onclick="showMessage('JavaScript Practice')">Details</button>
+      </article>
+
+      <article class="activity-card">
+        <div class="activity-top">
+          <span class="chip">Design</span>
+          <span class="date">2026</span>
+        </div>
+        <h2>UI Design Research</h2>
+        <p>
+          Studied modern UI design patterns, Material Design concepts, colors,
+          spacing, and card layouts.
+        </p>
+        <button type="button" onclick="showMessage('UI Design Research')">Details</button>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

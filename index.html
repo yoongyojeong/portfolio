@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-bar">
+    <a class="logo" href="index.html">My Portfolio</a>
+
+    <nav id="navMenu" aria-label="Main navigation">
+      <a href="index.html" class="active">About</a>
+      <a href="activities.html">Activities</a>
+    </nav>
+
+    <button class="menu-btn" type="button" aria-label="Open navigation menu" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Hello, I am</p>
+        <h1>Your Name</h1>
+        <p class="subtitle">Student / Developer / Designer</p>
+        <p class="intro">
+          I am passionate about technology, design, and creating useful digital
+          experiences. This portfolio introduces who I am and what I have done.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="activities.html">View Activities</a>
+          <a class="btn secondary" href="#about">About Me</a>
+        </div>
+      </div>
+
+      <aside class="profile-card" aria-label="Profile summary">
+        <div class="avatar">YN</div>
+        <h2>Your Name</h2>
+        <p>Frontend Beginner</p>
+        <div class="profile-stats">
+          <div>
+            <strong>4</strong>
+            <span>Skills</span>
+          </div>
+          <div>
+            <strong>3</strong>
+            <span>Activities</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>Self Introduction</h2>
+      </div>
+
+      <div class="card">
+        <p>
+          I enjoy learning web development and building clean, responsive
+          websites. My interests include HTML, CSS, JavaScript, UI design, and
+          problem solving. I like turning ideas into simple and useful web pages.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>What I Am Learning</h2>
+      </div>
+
+      <div class="skill-grid">
+        <article class="card skill-card">
+          <span class="material-dot blue"></span>
+          <h3>HTML</h3>
+          <p>Semantic page structure</p>
+        </article>
+        <article class="card skill-card">
+          <span class="material-dot teal"></span>
+          <h3>CSS</h3>
+          <p>Responsive modern layouts</p>
+        </article>
+        <article class="card skill-card">
+          <span class="material-dot amber"></span>
+          <h3>JavaScript</h3>
+          <p>Basic interactivity</p>
+        </article>
+        <article class="card skill-card">
+          <span class="material-dot rose"></span>
+          <h3>UI Design</h3>
+          <p>Clean Material-style interfaces</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
